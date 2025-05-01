@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Guess The Number</title>
+</head>
+<body>
+    <div class="game_range-box">
+        <div class="range_box">
+            <p>Choose range :</p>
+            <button class="range">10</button>
+            <button class="range">20</button>
+            <button class="range">50</button>
+            <button class="range">100</button>
+        </div>
+    </div>
+    <div class="container">
+        <p>Guess a number between <span id="range_show">1 to 100</span> <br> You have 10 chances to guess.</p>
+        <h1>Guess a number</h1>
+        <h2 id="winner_msg"></h2>
+        <input id="input" type="text">
+        <div>
+            <button class="btn">Submit</button>
+            <button class="reset">Reset</button>
+            <button class="choose_range">Choose</button>
+        </div>
+        <p>Score : <span id="score">0</span></p>
+        <p id="previous_guess">Previous guess</p>
+        <p>Guess remaining : <span id="chance">10</span></p>
+    </div>
+    <div class="modal_box">
+        <div class="modal">
+            <p>You are out of move</p>
+            <button class="play_again">Play again</button>
+        </div>
+    </div>
+</body>
+</html>

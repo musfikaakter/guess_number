@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100dvh;
+    background-color: #001c16;
+    color: #ddd;
+    font-size: 1.2em;
+    text-align: center;
+}
+.container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    margin: 1rem 0;
+}
+input {
+    font-size: inherit;
+    padding: 0.4rem;
+    width: 50%;
+    border: none;
+    outline: none;
+}
+button {
+    background-color: blueviolet;
+    color: #ddd;
+    font-size: inherit;
+    padding: 0.3rem 0.5rem;
+    margin: 1.5rem 0 2rem;
+    cursor: pointer;
+
+    &:active {
+        background-color: #001c16;
+    }
+}
+#previous_guess {
+    margin: 1rem 0;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.modal_box, .game_range-box {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background-color: hsla(0, 59%, 41%, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+.modal_box {
+    z-index: -1;
+    opacity: 0;
+}
+.show {
+    z-index: 111;
+    opacity: 1;
+}
+.modal, .range_box {
+    height: 10rem;
+    width: 16rem;
+    background-color: #001c16;
+    font-size: 1.2em;
+    place-content: center;
+    border: 2px solid #ddd;
+}
